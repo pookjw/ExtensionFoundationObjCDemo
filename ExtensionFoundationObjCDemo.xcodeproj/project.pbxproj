@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F91B5132C7B7C810068C91D /* Extension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 4F91B50B2C7B7C810068C91D /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4F91B52C2C7B7E600068C91D /* ExtensionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F91B52A2C7B7E600068C91D /* ExtensionKit.framework */; };
+		4F91B52D2C7B7E600068C91D /* ExtensionFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F91B52B2C7B7E600068C91D /* ExtensionFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F91B5112C7B7C810068C91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F91B4CE2C7B7C510068C91D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F91B50A2C7B7C810068C91D;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F91B5182C7B7C810068C91D /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				4F91B5132C7B7C810068C91D /* Extension.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F91B5302C7B7F850068C91D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4F91B4D62C7B7C510068C91D /* ExtensionFoundationObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtensionFoundationObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F91B4F22C7B7C6C0068C91D /* ExtensionHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtensionHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F91B50B2C7B7C810068C91D /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F91B5212C7B7D130068C91D /* ExtensionInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionInterface.h; sourceTree = "<group>"; };
+		4F91B52A2C7B7E600068C91D /* ExtensionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExtensionKit.framework; path = System/Library/Frameworks/ExtensionKit.framework; sourceTree = SDKROOT; };
+		4F91B52B2C7B7E600068C91D /* ExtensionFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExtensionFoundation.framework; path = System/Library/Frameworks/ExtensionFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4F91B5022C7B7C6D0068C91D /* Exceptions for "ExtensionHost" folder in "ExtensionHost" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Main.storyboard",
+			);
+			target = 4F91B4F12C7B7C6C0068C91D /* ExtensionHost */;
+		};
+		4F91B5172C7B7C810068C91D /* Exceptions for "Extension" folder in "Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4F91B50A2C7B7C810068C91D /* Extension */;
+		};
+		4FCE9AC32C7B7F9900C14445 /* Exceptions for "ExtensionFoundationObjCDemo" folder in "ExtensionFoundationObjCDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				com.pookjw.ExtensionHost.Extension.appextensionpoint,
+			);
+			target = 4F91B4D52C7B7C510068C91D /* ExtensionFoundationObjCDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		4F91B5062C7B7C6D0068C91D /* Exceptions for "ExtensionHost" folder in "Copy Bundle Resources" phase from "ExtensionHost" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 4F91B4F02C7B7C6C0068C91D /* Resources */;
+			membershipExceptions = (
+				Base.lproj/Main.storyboard,
+			);
+		};
+		4F91B5322C7B7F8B0068C91D /* Exceptions for "ExtensionFoundationObjCDemo" folder in "Copy Files" phase from "ExtensionFoundationObjCDemo" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 4F91B5302C7B7F850068C91D /* CopyFiles */;
+			membershipExceptions = (
+				com.pookjw.ExtensionHost.Extension.appextensionpoint,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4F91B4D82C7B7C510068C91D /* ExtensionFoundationObjCDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4FCE9AC32C7B7F9900C14445 /* Exceptions for "ExtensionFoundationObjCDemo" folder in "ExtensionFoundationObjCDemo" target */,
+				4F91B5322C7B7F8B0068C91D /* Exceptions for "ExtensionFoundationObjCDemo" folder in "Copy Files" phase from "ExtensionFoundationObjCDemo" target */,
+			);
+			path = ExtensionFoundationObjCDemo;
+			sourceTree = "<group>";
+		};
+		4F91B4F32C7B7C6C0068C91D /* ExtensionHost */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4F91B5022C7B7C6D0068C91D /* Exceptions for "ExtensionHost" folder in "ExtensionHost" target */,
+				4F91B5062C7B7C6D0068C91D /* Exceptions for "ExtensionHost" folder in "Copy Bundle Resources" phase from "ExtensionHost" target */,
+			);
+			path = ExtensionHost;
+			sourceTree = "<group>";
+		};
+		4F91B50C2C7B7C810068C91D /* Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4F91B5172C7B7C810068C91D /* Exceptions for "Extension" folder in "Extension" target */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F91B4D32C7B7C510068C91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F91B52C2C7B7E600068C91D /* ExtensionKit.framework in Frameworks */,
+				4F91B52D2C7B7E600068C91D /* ExtensionFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F91B4EF2C7B7C6C0068C91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F91B5082C7B7C810068C91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F91B4CD2C7B7C510068C91D = {
+			isa = PBXGroup;
+			children = (
+				4F91B5212C7B7D130068C91D /* ExtensionInterface.h */,
+				4F91B4D82C7B7C510068C91D /* ExtensionFoundationObjCDemo */,
+				4F91B4F32C7B7C6C0068C91D /* ExtensionHost */,
+				4F91B50C2C7B7C810068C91D /* Extension */,
+				4F91B5292C7B7E600068C91D /* Frameworks */,
+				4F91B4D72C7B7C510068C91D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F91B4D72C7B7C510068C91D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F91B4D62C7B7C510068C91D /* ExtensionFoundationObjCDemo.app */,
+				4F91B4F22C7B7C6C0068C91D /* ExtensionHost.app */,
+				4F91B50B2C7B7C810068C91D /* Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F91B5292C7B7E600068C91D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F91B52B2C7B7E600068C91D /* ExtensionFoundation.framework */,
+				4F91B52A2C7B7E600068C91D /* ExtensionKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F91B4D52C7B7C510068C91D /* ExtensionFoundationObjCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F91B4E82C7B7C520068C91D /* Build configuration list for PBXNativeTarget "ExtensionFoundationObjCDemo" */;
+			buildPhases = (
+				4F91B4D22C7B7C510068C91D /* Sources */,
+				4F91B4D32C7B7C510068C91D /* Frameworks */,
+				4F91B4D42C7B7C510068C91D /* Resources */,
+				4F91B5302C7B7F850068C91D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4F91B4D82C7B7C510068C91D /* ExtensionFoundationObjCDemo */,
+			);
+			name = ExtensionFoundationObjCDemo;
+			packageProductDependencies = (
+			);
+			productName = ExtensionFoundationObjCDemo;
+			productReference = 4F91B4D62C7B7C510068C91D /* ExtensionFoundationObjCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F91B4F12C7B7C6C0068C91D /* ExtensionHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F91B5032C7B7C6D0068C91D /* Build configuration list for PBXNativeTarget "ExtensionHost" */;
+			buildPhases = (
+				4F91B4EE2C7B7C6C0068C91D /* Sources */,
+				4F91B4EF2C7B7C6C0068C91D /* Frameworks */,
+				4F91B4F02C7B7C6C0068C91D /* Resources */,
+				4F91B5182C7B7C810068C91D /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F91B5122C7B7C810068C91D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4F91B4F32C7B7C6C0068C91D /* ExtensionHost */,
+			);
+			name = ExtensionHost;
+			packageProductDependencies = (
+			);
+			productName = ExtensionHost;
+			productReference = 4F91B4F22C7B7C6C0068C91D /* ExtensionHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F91B50A2C7B7C810068C91D /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F91B5142C7B7C810068C91D /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				4F91B5072C7B7C810068C91D /* Sources */,
+				4F91B5082C7B7C810068C91D /* Frameworks */,
+				4F91B5092C7B7C810068C91D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4F91B50C2C7B7C810068C91D /* Extension */,
+			);
+			name = Extension;
+			packageProductDependencies = (
+			);
+			productName = Extension;
+			productReference = 4F91B50B2C7B7C810068C91D /* Extension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F91B4CE2C7B7C510068C91D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					4F91B4D52C7B7C510068C91D = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					4F91B4F12C7B7C6C0068C91D = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					4F91B50A2C7B7C810068C91D = {
+						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
+					};
+				};
+			};
+			buildConfigurationList = 4F91B4D12C7B7C510068C91D /* Build configuration list for PBXProject "ExtensionFoundationObjCDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F91B4CD2C7B7C510068C91D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4F91B4D72C7B7C510068C91D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F91B4D52C7B7C510068C91D /* ExtensionFoundationObjCDemo */,
+				4F91B4F12C7B7C6C0068C91D /* ExtensionHost */,
+				4F91B50A2C7B7C810068C91D /* Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F91B4D42C7B7C510068C91D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F91B4F02C7B7C6C0068C91D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F91B5092C7B7C810068C91D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F91B4D22C7B7C510068C91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F91B4EE2C7B7C6C0068C91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F91B5072C7B7C810068C91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F91B5122C7B7C810068C91D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F91B50A2C7B7C810068C91D /* Extension */;
+			targetProxy = 4F91B5112C7B7C810068C91D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F91B4E92C7B7C520068C91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = ExtensionFoundationObjCDemo/ExtensionFoundationObjCDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pookjw.ExtensionFoundationObjCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		4F91B4EA2C7B7C520068C91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = ExtensionFoundationObjCDemo/ExtensionFoundationObjCDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pookjw.ExtensionFoundationObjCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		4F91B4EC2C7B7C520068C91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4F91B4ED2C7B7C520068C91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4F91B5042C7B7C6D0068C91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExtensionHost/ExtensionHost.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pookjw.ExtensionHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		4F91B5052C7B7C6D0068C91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExtensionHost/ExtensionHost.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pookjw.ExtensionHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		4F91B5152C7B7C810068C91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Extension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pookjw.ExtensionHost.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4F91B5162C7B7C810068C91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Extension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pookjw.ExtensionHost.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F91B4D12C7B7C510068C91D /* Build configuration list for PBXProject "ExtensionFoundationObjCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F91B4EC2C7B7C520068C91D /* Debug */,
+				4F91B4ED2C7B7C520068C91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F91B4E82C7B7C520068C91D /* Build configuration list for PBXNativeTarget "ExtensionFoundationObjCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F91B4E92C7B7C520068C91D /* Debug */,
+				4F91B4EA2C7B7C520068C91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F91B5032C7B7C6D0068C91D /* Build configuration list for PBXNativeTarget "ExtensionHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F91B5042C7B7C6D0068C91D /* Debug */,
+				4F91B5052C7B7C6D0068C91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F91B5142C7B7C810068C91D /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F91B5152C7B7C810068C91D /* Debug */,
+				4F91B5162C7B7C810068C91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F91B4CE2C7B7C510068C91D /* Project object */;
+}
