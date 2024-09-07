@@ -92,10 +92,11 @@ OBJC_EXPORT id objc_msgSendSuper2(void);
     __kindof NSEnumerator *recordEnumerator = reinterpret_cast<id (*)(Class, SEL, id, NSUInteger)>(objc_msgSend)(objc_lookUpClass("LSApplicationExtensionRecord"), sel_registerName("enumeratorWithExtensionPointRecord:options:"), extensionPointRecord, 0);
     [extensionPointRecord release];
     
-    id _Nullable extensionIdentity = nil;
-    for (id record in recordEnumerator) {
+    id _Nullable extensionIdentity;
+    if (id record = [recordEnumerator nextObject]) {
         extensionIdentity = reinterpret_cast<id (*)(id, SEL, id)>(objc_msgSend)([objc_lookUpClass("_EXExtensionIdentity") alloc], sel_registerName("initWithApplicationExtensionRecord:"), record);
-        break;
+    } else {
+        extensionIdentity = nil;
     }
     
     //
