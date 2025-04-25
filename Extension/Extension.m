@@ -28,6 +28,15 @@
  
  또한 Storyboard 없이 하려면 -[_EXViewControllerSceneConfiguration setViewControllerClass:]로 할 수 있는데,
  -[_EXExtensionIdentity(SceneProviding) configurationWithParameters:]을 보면 Storyboard여야 _EXViewControllerSceneConfiguration 생성을 해주기 때문에, -setViewControllerClass:를 정상적인 방법으로 호출할 수 없다.
+ 
+ ---
+ 
+ macOS는 모르겠으나 iOS의 경우 -[_EXExtensionIdentity(SceneProviding) configurationWithParameters:]에서
+ EXViewControllerClass,
+ EXViewControllerClassName
+ (둘중 하나만 정의해도 되는듯)
+ EXSceneDelegateClass
+ 들이 있음
  */
 
 @implementation Extension
